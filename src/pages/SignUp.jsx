@@ -12,11 +12,11 @@ function SignUp() {
   const handleSignup = (e) => {
     e.preventDefault();
 
-    // Store user data in localStorage
+    
     const users = JSON.parse(localStorage.getItem('users')) || [];
     const newUser = { name, email, password,role };
 
-    // Check if user already exists
+    
     const userExists = users.find(user => user.email === email);
     if (userExists) {
       alert('User already exists with this email.');
@@ -26,7 +26,7 @@ function SignUp() {
     users.push(newUser);
     localStorage.setItem('users', JSON.stringify(users));
     
-    // Redirect to login page after successful signup
+    
     navigate('/');
   };
     return (

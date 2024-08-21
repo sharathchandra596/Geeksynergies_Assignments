@@ -9,14 +9,14 @@ function LogIn() {
     const handleLogin = (e) => {
         e.preventDefault();
     
-        // Get users from localStorage
+       
         const users = JSON.parse(localStorage.getItem('users')) || [];
     
-        // Find the user
+     
         const user = users.find(user => user.email === email && user.password === password);
     
         if (user) {
-          // Store logged-in user in localStorage
+          
           localStorage.setItem('loggedInUser', JSON.stringify(user));
           alert('Login successful!');
           navigate('/home');  // Redirect to homepage or dashboard

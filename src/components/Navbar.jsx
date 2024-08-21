@@ -1,6 +1,6 @@
-import React from 'react';
+
 import { MdLocalMovies } from 'react-icons/md';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
    
@@ -12,7 +12,7 @@ function Navbar() {
         <MdLocalMovies size={40} /> <h1>Movies</h1>
         </a>
 
-        {/* Button */}
+        
         <Link to={"/company"}>
         <button className="bg-white text-blue-600 py-2 px-4 rounded-lg hover:bg-gray-200 transition duration-300">
           Conpany Info
