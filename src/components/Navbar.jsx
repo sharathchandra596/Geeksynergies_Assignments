@@ -1,4 +1,5 @@
 import React from 'react';
+import { MdLocalMovies } from 'react-icons/md';
 import { Link, useNavigate } from 'react-router-dom';
 
 function Navbar() {
@@ -7,8 +8,8 @@ function Navbar() {
     <nav className="bg-gray-800 p-4">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <a href="/" className="text-white text-2xl font-bold">
-          MyLogo
+        <a  href="/" className="text-white text-2xl font-bold flex justify-center items-center">
+        <MdLocalMovies size={40} /> <h1>Movies</h1>
         </a>
 
         {/* Button */}

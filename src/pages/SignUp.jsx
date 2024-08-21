@@ -14,7 +14,7 @@ function SignUp() {
 
     // Store user data in localStorage
     const users = JSON.parse(localStorage.getItem('users')) || [];
-    const newUser = { name, email, password };
+    const newUser = { name, email, password,role };
 
     // Check if user already exists
     const userExists = users.find(user => user.email === email);
